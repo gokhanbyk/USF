@@ -7,55 +7,9 @@
 
     {% block content %}
     <main>
-        <div class="top-side container p-5">
-          <div class="title-div">
-            <h1>U.S.F yazılım Sertifikası</h1>
-            <p>Yazılım uzmanları ve yazılım şirketleri için dünyanın tek yetkinlik bildiren sertifikası USF (Alanında
-              Benzersiz Üstünlük) ile tanışın</p>
-    
-            <div class="navigators">
-              <a href="#" id="kurumsal">Kurumsal başvuru</a>
-              <a href="#" id="bireysel">Bireysel başvuru</a>
-            </div>
-          </div>
-    
-          <div class="img-container">
-            <div class="img-wrap">
-              <img src="./images/certificate1.png" alt="certificate example">
-            </div>
-            <div class="circle">
-    
-            </div>
-          </div>
-        </div>
-    
-        <section class="p-5 container">
-          <h2>U.S.F yazılım sertifikası kimler içindir?</h2>
-          <p class="sub-title">U.S.F House (kurumsal) ve U.S.F EU.S.Fpert (bireysel) olmak üzere iki tip U.S.F yazılım
-            sertifikası mevcuttur.</p>
-    
-          <div class="content-div row">
-            <div class="col-md-6">
-              <p class="content-title">Eğer bir yazılım uzmanıysanız;</p>
-              <p>U.S.F EU.S.Fpert sertifikası ile hem yetkin olduğunuz konular, hem de yetkinlik dereceniz belgelendirilir.
-                Bu sayede işverenlerin ve müşterilerinizin usfcertificate.com üzerinden sertifikanızı sorgulayarak yetkinlik
-                detaylarınızı görüntülemelerini sağlayabilirsiniz.</p>
-            </div>
-    
-            <div class="col-md-6">
-              <p class="content-title">Eğer bir yazılım şirketiyseniz veya yazılım alanında eğitim veren bir kurumsanız</p>
-              <p>
-                Potansiyel müşterilerinize ve çalışan adaylarınıza usfcertificate.com üzerinden sorgulayabilecekleri U.S.F
-                House sertifikasıyla şirketinizin yazılım alanındaki yetkinliğini belgeleyebilirsiniz.
-              </p>
-            </div>
-          </div>
-          <div class="my-5">
-            <div class="w-25 mx-auto arrows-text">
-              <img src="./images/arrows.png" alt="" class="w-100">
-            </div>
-          </div>
-        </section>
+        {% for post in posts %}
+          {% include "partials/_information.html" %}
+        {% endfor %}
       </main>
       <!-- % Main end -->
     
