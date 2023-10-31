@@ -1,12 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends "core/layout.html" %}
+{% load static %}  
+
+{% block title %}
+<title> Anasayfa</title>
+{% endblock title %}
+
+    {% block content %}
+    <main>
+        <div class="top-side container p-5">
+          <div class="title-div">
+            <h1>U.S.F yazılım Sertifikası</h1>
+            <p>Yazılım uzmanları ve yazılım şirketleri için dünyanın tek yetkinlik bildiren sertifikası USF (Alanında
+              Benzersiz Üstünlük) ile tanışın</p>
     
-</body>
-</html>
+            <div class="navigators">
+              <a href="#" id="kurumsal">Kurumsal başvuru</a>
+              <a href="#" id="bireysel">Bireysel başvuru</a>
+            </div>
+          </div>
+    
+          <div class="img-container">
+            <div class="img-wrap">
+              <img src="./images/certificate1.png" alt="certificate example">
+            </div>
+            <div class="circle">
+    
+            </div>
+          </div>
+        </div>
+    
+        <section class="p-5 container">
+          <h2>U.S.F yazılım sertifikası kimler içindir?</h2>
+          <p class="sub-title">U.S.F House (kurumsal) ve U.S.F EU.S.Fpert (bireysel) olmak üzere iki tip U.S.F yazılım
+            sertifikası mevcuttur.</p>
+    
+          <div class="content-div row">
+            <div class="col-md-6">
+              <p class="content-title">Eğer bir yazılım uzmanıysanız;</p>
+              <p>U.S.F EU.S.Fpert sertifikası ile hem yetkin olduğunuz konular, hem de yetkinlik dereceniz belgelendirilir.
+                Bu sayede işverenlerin ve müşterilerinizin usfcertificate.com üzerinden sertifikanızı sorgulayarak yetkinlik
+                detaylarınızı görüntülemelerini sağlayabilirsiniz.</p>
+            </div>
+    
+            <div class="col-md-6">
+              <p class="content-title">Eğer bir yazılım şirketiyseniz veya yazılım alanında eğitim veren bir kurumsanız</p>
+              <p>
+                Potansiyel müşterilerinize ve çalışan adaylarınıza usfcertificate.com üzerinden sorgulayabilecekleri U.S.F
+                House sertifikasıyla şirketinizin yazılım alanındaki yetkinliğini belgeleyebilirsiniz.
+              </p>
+            </div>
+          </div>
+          <div class="my-5">
+            <div class="w-25 mx-auto arrows-text">
+              <img src="./images/arrows.png" alt="" class="w-100">
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- % Main end -->
+    
+      <section class="container p-5" id="nasil-alinir">
+        <h2 class="px-4">U.S.F yazılım sertifikası nasıl alınır?</h2>
+        <div class="row">
+          <div class="col-md-6 p-5">
+            <article class="description">
+              <p>Kurumsal ve bireysel sertifikasyon süreçleri farklıdır. <span>Yazılım şirketinizin</span> bir U.S.F House
+                kalite sertifikasına sahip olmasını istiyorsanız şirketinize ait resmi belgelerle buradan başvuruda
+                bulunabilirsiniz. Başvurunuzla beraber inceleme süreci başlar ve U.S.F kalite standartlarını sağlayan
+                kuruluşlar 5 iş günü içerisinde sertifikalandırılır.
+              </p>
+    
+              <p><span>Bireysel olarak</span> yazılım alanlarındaki yetkinliklerinizle bir U.S.F EU.S.Fpert sertifikasına
+                sahip olmak istiyorsanız buradan sınav başvurusunda bulunabilirsiniz.</p>
+            </article>
+          </div>
+    
+    
+    
+          <div class="col-md-6 p-5">
+            <article class="description-image">
+              <img class="w-100 rounded-2" src="./images/desciption-image.webp" alt="">
+            </article>
+          </div>
+    
+        </div>
+    
+      </section>
+    
+    
+      <section id="ne-zaman-sahip" class="container p-5">
+        <div class="row">
+          <div class="col-md-6 p-5">
+            <h2>Ne zaman bir U.S.F yazılım sertifikasına sahip olmalısınız?</h2>
+            <p>
+              Bireysel yazılım uzmanlığı sertifikaları için U.S.F sınav merkezlerinde test ve case çalışmasını 70 ve üzeri
+              skorla geçmeniz gerekir.
+            </p>
+    
+            <p>
+              Kurumsal yazılım şirketi sertifikası için ise başvuru ekranında istenen belgeleri yükleyerek donanımlı bir
+              personel kadrosuna sahip olduğunuzu belgelemeniz gerekir
+            </p>
+          </div>
+    
+          <div class="col-md-6 p-4">
+            <p>
+              Hem firmalar, hem de bireyler için dijital dünyada etkileyici bir profil oluşturmak kolaydır. Ancak
+              müşterilerin veya işverenlerin teknik donanımınızı sektör paydaşlarınızdan ayırt etmesi oldukça zordur.
+            </p>
+            <p>
+              Bir yazılım şirketi olarak hizmet kalitenizi belgelendirmeniz için U.S.F House, bir yazılımcı olarak
+              yetkinliğinizi belgelendirmeniz için U.S.F EU.S.Fpert sertifikasına sahip olmalısınız
+            </p>
+    
+          </div>
+    
+    
+        </div>
+      </section>
+    
+    
+      <section id="sayesinde" class="container p-5">
+        <article id="kurumsal">
+          <h2 class="px-5">Kurumsal U.S.F sertifikası sayesinde</h2>
+          <p class="px-5 mt-4">Doğrulanmış şirket profiliniz açılır</p>
+          <p class="px-5">Tarafsız incelemeler sonucu raporlanan; Kadronuzdaki personellerin donanım seviyesi, personel
+            memnuniyeti, müşteri memuniyeti, hizmet büyüklüğü ve güven skorunuz -siz kaldırmadığınız sürece- açık hale
+            gelerek müşterilerinizin farkındalığını arttırır.</p>
+          <p class="px-5">Ayrıca sertifikalı kuruluşlar şirketleri hakkındaki yorumlara yanıt vermekle sınırlı kalmaz,
+            müşteri doğrulaması da talep edebilir.</p>
+        </article>
+    
+        <article id="bireysel" class="mt-5">
+          <h2 class="px-5">Bireysel U.S.F sertifikası sayesinde</h2>
+          <p class="px-5 mt-4">Doğrulanmış uzman profiliniz açılır. Girdiğiniz sınavların sonuçlarına göre edindiğiniz
+            yetkinlikler ve skorlarınız -siz kaldırmadığınız sürece- profilinizde görünür. Sertifika başvurunuzla birlikte
+            izin verdiğiniz takdirde insan kaynakları uzmanlarımız tarafından geçmiş referanslarınız doğrulanarak
+            profilinizde güven skorunuz gösterilir.</p>
+        </article>
+      </section>
+    
+      <section id="yetkinlik" class="container p-5">
+        <div class="row">
+          <div class="col-md-6 p-5">
+            <h2>Peki beklediğiniz yetkinlik skorunu elde edemezseniz ne olur?</h2>
+            <p class="mb-0 mt-3">Başvurusu kabul edilerek inceleme sürecine giren her firmaya/bireye sistem üzerinden bir
+              profil sayfası atanır. Eğer firmanız/şahsınız sertifikasyon gerekliliklerini taşımıyorsa belgelendirme
+              yapılmaz. Dolayısıyla sertifika referans numarası da olmadığı için profilinde herhangi bir bilgi bulunmaz.
+            </p>
+            <p class="mt-0">Eğer sertifikaya sahip olduysanız fakat hangi bilgilerin profilinizde yer alacağı konusunda
+              kararsızsanız öne çıkan bilgileri tercihinize göre seçebilir veya profilinizi dilediğiniz süre boyunca kapalı
+              tutabilirsiniz.</p>
+          </div>
+    
+          <div class="col-md-6 p-5 d-flex justify-content-center align-items-center">
+            <div class="yetkinlik-image rounded-4">
+              <img class="w-100 h-100 rounded-4" src="./images/yetkinlik.webp" alt="">
+            </div>
+          </div>
+    
+    
+        </div>
+      </section>
+    {% endblock content %}
