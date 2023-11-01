@@ -16,7 +16,7 @@ def category(request, category_slug):
 
   categories = Category.objects.all()
 
-  posts = Post.objects.filter(category__slug = category_slug)
+  posts = CategoryPost.objects.filter(category__slug = category_slug)
   
   return render(request, 'category.html', {
     'posts': posts,

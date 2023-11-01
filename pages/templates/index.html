@@ -7,21 +7,22 @@
 
     {% block content %}
     <main>
-      {% for post in posts %}
         {% for post in posts %}
         <div class="container">
           <div class="row">
               {% include "partials/_information.html" %}
+              BOŞ
           </div>
         </div>
         {% endfor %}
       </main>
       <!-- % Main end -->
     
-      <section class="container p-5" id="nasil-alinir">
+      {% comment %} <section class="container p-5" id="nasil-alinir">
           {% include "partials/_information.html" %}
         </section>
         {% endfor %}
+        {% endcomment %}
     </main>
       <!-- % Main end -->
         <h2 class="px-4">U.S.F yazılım sertifikası nasıl alınır?</h2>
