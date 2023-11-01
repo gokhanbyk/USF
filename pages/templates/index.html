@@ -8,6 +8,16 @@
     {% block content %}
     <main>
       {% for post in posts %}
+        {% for post in posts %}
+        <div class="container">
+          <div class="row">
+              {% include "partials/_information.html" %}
+          </div>
+        </div>
+        {% endfor %}
+      </main>
+      <!-- % Main end -->
+    
       <section class="container p-5" id="nasil-alinir">
           {% include "partials/_information.html" %}
         </section>
