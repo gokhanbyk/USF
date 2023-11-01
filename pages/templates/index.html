@@ -8,7 +8,11 @@
     {% block content %}
     <main>
         {% for post in posts %}
-          {% include "partials/_information.html" %}
+        <div class="container">
+          <div class="row">
+              {% include "partials/_information.html" %}
+          </div>
+        </div>
         {% endfor %}
       </main>
       <!-- % Main end -->

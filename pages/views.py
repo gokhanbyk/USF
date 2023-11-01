@@ -3,8 +3,23 @@ from information.models import *
 # Create your views here.
 def index(request):
 
-  post = Post.objects.all()
+  posts = Post.objects.all()
+  categories = Category.objects.all()
+
 
   return render(request, 'index.html', {
-    'posts':post
+    'posts':posts,
+    'categories': categories
   })
+
+def category(request, category_slug):
+
+  categories = Category.objects.all()
+
+  posts = Post.objects.filter(category__slug = category_slug)
+  
+  return render(request, 'category.html', {
+    'posts': posts,
+    'categories': categories
+  })
+
