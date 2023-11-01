@@ -1,1 +1,15 @@
-{{ post.content|safe }}
+
+
+<h2 class="px-4">{{post.title}}</h2>
+<div class="row">
+  <div class="col-md-6 p-5">
+    {{post.content|safe}}
+  </div>
+
+  <div class="col-md-6 p-5">
+    {{post.image|safe}}
+  </div>
+
+</div>
+
+
