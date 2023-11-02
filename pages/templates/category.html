@@ -1,9 +1,21 @@
 {% extends "core/layout.html" %}
 
+{% block title %}
+{{ categori.title }}
+{% endblock title %}
+
 {% block content %}
 
+<main class="mt-5" id="bireysel-main">
+    <div class="container border-bottom border-secondary pb-3">
+        {% for post in posts %}
+            {% include "partials/_bireysel.html" %}
+        {% endfor %}
+    </div>
+</main>
+{% comment %} 
 {{posts}}
-{{categories}}
+{{categories}} {% endcomment %}
 
 
 {% endblock content %}
