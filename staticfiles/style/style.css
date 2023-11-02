@@ -1,0 +1,607 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101728;
+}
+
+body h1 {
+  color: #9340ff;
+}
+
+body nav #navbar-logo {
+  width: 50px;
+  height: 50px;
+}
+
+body nav a {
+  color: white !important;
+}
+
+body nav a:hover {
+  color: #9340ff !important;
+}
+
+body nav .active {
+  color: #9340ff !important;
+}
+
+body nav .dropdown-menu {
+  background-color: #101728;
+}
+
+body nav .dropdown-item:hover {
+  background-color: #101728;
+  color: #9340ff !important;
+}
+
+body main .top-side {
+  display: flex;
+  justify-content: center;
+}
+
+body main .top-side .title-div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+body main .top-side .title-div div:last-child {
+  margin-top: 20px;
+}
+
+body main .top-side .title-div h1 {
+  font-size: 4.5rem;
+  margin: 1rem 0rem;
+}
+
+body main .top-side .title-div p {
+  font-size: 1.5rem;
+}
+
+body main .top-side .title-div .navigators #kurumsal {
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(to right, #29A8FD, #1E41BB);
+  padding: 12px 20px;
+  border-radius: 24px;
+}
+
+body main .top-side .title-div .navigators #bireysel {
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(to right, #270F6B, #923FFE);
+  padding: 12px 20px;
+  border-radius: 24px;
+}
+
+body main .top-side .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 90%;
+}
+
+body main .top-side .img-container .img-wrap {
+  width: 35%;
+}
+
+body main .top-side .img-container .img-wrap img {
+  width: 100%;
+}
+
+body main .top-side .img-container .circle {
+  width: 55%;
+  height: 60%;
+  border: 24px solid rgba(255, 255, 255, 0.8);
+  border-bottom-width: 50px !important;
+  border-radius: 50%;
+  transform: rotateX(75deg);
+  position: absolute;
+  bottom: -9%;
+  box-shadow: 10px 70px 150px rgb(255, 255, 255);
+  z-index: -1;
+}
+
+body main section {
+  color: white;
+}
+
+body main section h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #8b3dff;
+}
+
+body main section .sub-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+body main section .content-div {
+  margin-top: 20px;
+  display: flex;
+}
+
+body main section .content-div p {
+  font-size: 1.5rem;
+}
+
+body main section .content-div span,
+body main section .content-div p.content-title {
+  color: #7ed957;
+}
+
+body main section .mb-3 .arrows-text {
+  position: relative;
+  width: 30%;
+  left: 5%;
+}
+
+body main section .mb-3 .arrows-text #arrow-bireysel {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  top: 32%;
+  left: 4%;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+body main section .mb-3 .arrows-text #arrow-kurumsal {
+  position: absolute;
+  color: white;
+  top: 56%;
+  left: 60px;
+  left: 19.8%;
+  font-size: 0.7rem;
+  letter-spacing: 0.1px;
+  font-weight: bold;
+}
+
+body #nasil-alinir h2 {
+  color: #9340ff;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+body #nasil-alinir .description p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+body #nasil-alinir .description span {
+  color: #7ed957;
+}
+
+body #ne-zaman-sahip h2 {
+  color: #9340ff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: start;
+  width: 75%;
+}
+
+body #ne-zaman-sahip p {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 25px;
+  text-align: start;
+}
+
+body #sayesinde h2 {
+  color: #9340ff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+body #sayesinde p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: start;
+  margin: 0;
+}
+
+body #yetkinlik h2 {
+  color: #9340ff;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+body #yetkinlik p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+body #yetkinlik .yetkinlik-image {
+  width: 425px;
+  height: 425px;
+}
+
+body #yetkinlik .yetkinlik-image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: left;
+  object-position: left;
+}
+
+body #footer .btn-primary {
+  background-color: #9340ff !important;
+  border-color: #9340ff !important;
+}
+
+body #footer h3 {
+  color: #9340ff;
+}
+
+body #yazilim-sirket h2 {
+  color: #9340ff;
+  font-size: 3rem;
+  font-weight: 700;
+  width: 90%;
+}
+
+body #yazilim-sirket p,
+body #yazilim-sirket ul,
+body #yazilim-sirket li {
+  color: white;
+  font-size: 1.1rem;
+  text-align: start;
+}
+
+body #yazilim-sirket .mac {
+  background-color: #3954A3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body #yazilim-sirket .mac .left {
+  gap: 5px;
+  display: flex;
+  padding: 5px 3px;
+}
+
+body #yazilim-sirket .mac .left .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+body #surec h2 {
+  color: #9340ff;
+  font-size: 3rem;
+  font-weight: 700;
+  width: 90%;
+}
+
+body #surec p,
+body #surec ol,
+body #surec li {
+  color: white;
+  font-size: 1.1rem;
+  text-align: start;
+}
+
+body #surec .resim {
+  width: 425px;
+  height: 425px;
+}
+
+body #surec .resim img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: left;
+  object-position: left;
+}
+
+body #gerekli-belgeler h2 {
+  color: #9340ff;
+  font-size: 3rem;
+  font-weight: 700;
+  width: 90%;
+}
+
+body #gerekli-belgeler p,
+body #gerekli-belgeler ol,
+body #gerekli-belgeler li {
+  color: white;
+  font-size: 1.1rem;
+  text-align: start;
+}
+
+body #gerekli-belgeler .resim {
+  width: 425px;
+  height: 425px;
+}
+
+body #gerekli-belgeler .resim img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+body #sertifika-turleri h2 {
+  color: #9340ff;
+  font-size: 3rem;
+  font-weight: 700;
+  width: 90%;
+}
+
+body #sertifika-turleri p {
+  color: white;
+  font-size: 1.1rem;
+  text-align: start;
+}
+
+body #bireysel-main .container .row .mac {
+  background-color: #3954A3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body #bireysel-main .container .row .mac .left {
+  gap: 5px;
+  display: flex;
+  padding: 5px 3px;
+}
+
+body #bireysel-main .container .row .mac .left .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+body #bireysel-main .container .row .emre-hocaa {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+body #bireysel-main section .first-line {
+  display: flex;
+  align-items: center;
+}
+
+body #bireysel-main section .first-line img {
+  width: 5%;
+}
+
+body #bireysel-main section .row .row .col-lg-6 .colors {
+  background-image: linear-gradient(to right, #2A106F, #8A3DFF);
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 24px;
+}
+
+body #bireysel-main section .row .col-lg-6:last-child .wrapper table {
+  border-collapse: collapse;
+}
+
+body #bireysel-main section .row .col-lg-6:last-child .wrapper table thead {
+  background-color: #BB98FE;
+}
+
+body #bireysel-main section .row .col-lg-6:last-child .wrapper table tbody {
+  border: 1px solid #BB98FE;
+}
+
+body #bireysel-main section .row .col-lg-6:last-child .wrapper table tbody td {
+  border: 1px solid #BB98FE;
+  text-align: center;
+  padding: 12px;
+}
+
+body #bireysel-main section .row .col-lg-6:last-child .wrapper table tbody td a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .img-container {
+    margin-top: 40px !important;
+  }
+
+  .img-container .circle {
+    top: 68%;
+  }
+
+  .arrows-text {
+    position: relative;
+    width: 70% !important;
+    left: 19% !important;
+  }
+
+  .arrows-text #arrow-bireysel {
+    font-size: 0.9rem !important;
+  }
+
+  .arrows-text #arrow-kurumsal {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .img-container {
+    margin-top: 0px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .img-container .circle {
+    top: 68%;
+  }
+
+  .arrows-text #arrow-bireysel {
+    font-size: 0.7rem !important;
+  }
+
+  .arrows-text #arrow-kurumsal {
+    font-size: 0.7rem !important;
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .img-container {
+    margin-top: 0px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .img-container .circle {
+    height: 100% !important;
+    width: 60% !important;
+    top: 45%;
+  }
+
+  .arrows-text {
+    position: relative;
+    left: 3% !important;
+  }
+
+  .arrows-text #arrow-bireysel {
+    font-size: 0.6rem !important;
+    left: 29% !important;
+  }
+
+  .arrows-text #arrow-kurumsal {
+    font-size: 0.6rem !important;
+    left: 44.4% !important;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.7rem !important;
+  }
+
+  p {
+    font-size: 0.9rem !important;
+  }
+
+  table {
+    width: 80% !important;
+    margin: auto !important;
+  }
+
+  table,
+  th,
+  td {
+    display: block !important;
+  }
+
+  th {
+    text-align: center !important;
+  }
+
+  td:first-child {
+    color: #BB98FE;
+  }
+
+  td {
+    text-align: center !important;
+  }
+}
+
+.navigators a:first-child {
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(to right, #29A8FD, #1E41BB);
+  padding: 12px 20px;
+  border-radius: 24px;
+}
+
+.navigators a:last-child {
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(to right, #270F6B, #923FFE);
+  padding: 12px 20px;
+  border-radius: 24px;
+}
+
+main p {
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+h2,
+h3 {
+  color: #9340ff;
+  text-align: start;
+  padding: 8px;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+ul,
+ol {
+  color: white;
+  font-size: 17px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #BB98FE;
+  text-align: center;
+  color: white;
+}
+
+tbody {
+  border: 1px solid #BB98FE;
+}
+
+td {
+  border: 1px solid #BB98FE;
+  text-align: center;
+  padding: 12px;
+  color: white;
+}
+
+td a {
+  text-decoration: none;
+  color: white;
+}
+
+p a {
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(to right, #270F6B, #923FFE);
+  padding: 12px 20px;
+  border-radius: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
