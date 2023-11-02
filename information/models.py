@@ -28,7 +28,7 @@ class Post(models.Model):
 class CategoryPost(models.Model):
     title = models.CharField(max_length=255)
     content = RichTextField()
-    image = RichTextField(null=True)
+    image = RichTextField(null=True, blank=True)
 
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 

@@ -1,12 +1,25 @@
+{% load static %}
+<div class="row p-md-3 justify-content-center">
 
-<h2 class="px-4">{{post.title}}</h2>
-<div class="row">
-  <div class="col-md-6 p-md-5">
+  {% if post.id == 6 %}
+  <h2 class="text-center">U.S.F yazılım sertifikası kimler içindir?</h2>
+  <p class="sub-title text-center">U.S.F House (kurumsal) ve U.S.F EU.S.Fpert (bireysel) olmak üzere iki tip U.S.F yazılım
+    sertifikası mevcuttur.</p>
+  
+  {% endif %}
+
+
+  <div class="col-lg-6 col-12 p-md-3 py-2 my-md-0 my-3">
     {{post.content|safe}}
   </div>
 
-  <div class="col-md-6 p-md-5">
+  <div class="col-lg-6 col-12 p-md-3 py-2 my-md-0 my-3">
     {{post.image|safe}}
   </div>
+
+  {% if post.id == 6 %}
+      <img src="{% static "./images/ok.png" %}" class="w-50" alt="">
+  
+  {% endif %}
 
 </div>
